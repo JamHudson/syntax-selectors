@@ -1,0 +1,143 @@
+/* Global Styles
+--------------*/
+
+body {
+    background-color: #85dcff;
+    margin: 15px;
+}
+
+nav {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a {
+    color: white;
+}
+
+nav a:hover {
+    color: #eeda12;
+}
+
+h1 {
+    font-size: 64px;
+    padding: 5px;
+}
+
+figure {
+    padding-top: 10px;
+    margin: 0px;
+}
+
+figure img {
+    width: 512px;
+    height: auto;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.container {
+    height: fit-content;
+    border: #125a77;
+    background: #1e91bf;
+    border-style: solid;
+    border-width: 6px;
+    padding: 15px;
+
+}
+
+main {
+    margin: 50px;
+}
+
+/* Enemy Styles
+------------------*/
+
+.enemy {
+    background-color: #ff8383
+}
+
+.enemy .container {
+    background-color: #d00d10;
+    border-color: #7d0000;
+}
+
+.enemy figure img {
+    border-color: #7d0000;
+    background-color: #7d0000;
+}
+
+/* Tumore Styles
+------------------*/
+
+.tumore {
+    background-color: #846ae6;
+}
+
+.tumore main a {
+    color: #980a0d;
+}
+
+.tumore main a:hover {
+    color: #ff9d00;
+}
+
+.tumore .container {
+    background-color: #6039f3;
+    border-color: #421fc1;
+}
+
+.tumore figure img {
+    border-color: #d00d10;
+    background-color: #7d0000;
+}
+
+/*
+-------------*/
+#difficulty-button {
+    height: 60px;
+    vertical-align: middle;
+    width: fit-content;
+}
+
+#difficulty-button button {
+    background: none;
+    border-style: none;
+    width: 60px;
+    height: 60px;
+}
+
+#difficulty-button a {
+    margin: 0px;
+}
+
+#difficulty-button img {
+    transition: all 0.35s ease-out;
+}
+
+#difficulty-button:hover img {
+    transform: scale(1.5);
+}
+
+#difficulty-button label {
+    font-size: 16px;
+    color: white;
+    float: right;
+    background-color: #125a77;
+}
+
+#boss-list {
+    font-size: 20px;
+}

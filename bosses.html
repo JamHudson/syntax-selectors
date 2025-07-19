@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Characters</title>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bosses.html">Bosses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bosses</h1>
+        <p><span id="difficulty-button">
+                <button id="normal-btn">
+                    <img src="images/tumore.png" alt="Activate Normal" width="60" height="60">
+                </button>
+                <button id="tumore-btn">
+                    <img src="images/normal.png" alt="Activate Tumore" width="60" height="60">
+                </button>
+            </span>List of bosses in the game. Click icon to swap difficulties.</p>
+        <div class="container" id="boss-list">
+            <ul id="normal-bosses">
+                <li><a href="pages/doombringer.html">Doombringer</a></li>
+                <li><a href="pages/exec.html">Exec</a></li>
+            </ul>
+            <ul id="tumore-bosses" style="display:none;">
+                <li><a href="pages/deathbringer.html">Deathbringer</a></li>
+                <li><a href="pages/x-treme.html">X-Treme</a></li>
+            </ul>
+        </div>
+        <script>
+            const normalBosses = document.getElementById('normal-bosses');
+            const tumoreBosses = document.getElementById('tumore-bosses');
+            const normalBtn = document.getElementById('normal-btn');
+            const tumoreBtn = document.getElementById('tumore-btn');
+
+            tumoreBtn.addEventListener('click', () => {
+                normalBosses.style.display = 'none';
+                tumoreBosses.style.display = '';
+                tumoreBtn.style.display = 'none';
+                normalBtn.style.display = '';
+            });
+
+            normalBtn.addEventListener('click', () => {
+                tumoreBosses.style.display = 'none';
+                normalBosses.style.display = '';
+                normalBtn.style.display = 'none';
+                tumoreBtn.style.display = '';
+            });
+
+            // Initial state: show tumoreBtn, hide normalBtn
+            normalBtn.style.display = 'none';
+            tumoreBtn.style.display = '';
+        </script>
+</body>
+
+</html>
